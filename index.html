@@ -3,63 +3,268 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>حسام‌الدین بهرامپور | کارشناس رسمی دادگستری</title>
-<meta name="description" content="حســـام‌الدین بهرامپور، کارشناس رسمی دادگستری رشته راه و ساختمان">
-.center-logo {
-    position: fixed !important;
-    top: 12px !important;
-    left: 12px !important;
-    width: 50px !important;
-    height: auto !important;
-    max-width: 50px !important;
-    z-index: 1000 !important;
-    display: block !important;
-}
+
+<meta name="description" content="حسام‌الدین بهرامپور، کارشناس رسمی دادگستری رشته راه و ساختمان">
+
 <style>
-*{box-sizing:border-box}
-body{margin:0;min-height:100vh;background:#f3f3f1;color:#222;font-family:Tahoma,Arial,sans-serif}
-.page{width:100%;max-width:480px;margin:0 auto;padding:28px 18px 35px}
-.card{background:#fff;border:1px solid #e1e1de;border-radius:20px;padding:32px 22px 25px;box-shadow:0 8px 30px rgba(0,0,0,.05)}
-.header{text-align:center;margin-bottom:28px}
-.name{font-size:25px;font-weight:700;line-height:1.6;margin-bottom:8px}
-.title{font-size:16px;line-height:1.9;color:#555;margin-bottom:5px}
-.license{font-size:14px;color:#777;line-height:1.8}
-.divider{width:55px;height:2px;margin:18px auto 25px;background:#777;opacity:.45}
-.buttons{display:flex;flex-direction:column;gap:11px}
-.button{display:flex;align-items:center;justify-content:center;width:100%;min-height:54px;padding:13px 16px;border:1px solid #dededb;border-radius:12px;background:#fafaf9;color:#222;text-decoration:none;font-size:15px;font-weight:600;transition:.2s}
-.button:hover{background:#f0f0ee;border-color:#c8c8c4;transform:translateY(-1px)}
-.icon{width:30px;margin-left:9px;font-size:18px;text-align:center;flex-shrink:0}
-.footer{text-align:center;margin-top:24px;font-size:11px;line-height:1.8;color:#999}
-@media(max-width:360px){.page{padding:18px 12px 25px}.card{padding:26px 16px 21px}.name{font-size:22px}.title{font-size:15px}}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #f3f3f1;
+    color: #222;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+/* لوگوی مرکز */
+.center-logo {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    width: 50px;
+    height: auto;
+    max-width: 50px;
+    display: block;
+    z-index: 1000;
+}
+
+/* صفحه اصلی */
+.page {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 28px 18px 35px;
+}
+
+/* کارت */
+.card {
+    background: #fff;
+    border: 1px solid #e1e1de;
+    border-radius: 20px;
+    padding: 32px 22px 25px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.05);
+}
+
+/* بخش عنوان */
+.header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.name {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.title {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.license {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.8;
+}
+
+.divider {
+    width: 55px;
+    height: 2px;
+    margin: 18px auto 25px;
+    background: #777;
+    opacity: .45;
+}
+
+/* دکمه‌ها */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 54px;
+    padding: 13px 16px;
+    border: 1px solid #dededb;
+    border-radius: 12px;
+    background: #fafaf9;
+    color: #222;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.button:hover {
+    background: #f0f0ee;
+    border-color: #c8c8c4;
+    transform: translateY(-1px);
+}
+
+/* آیکون‌های معمولی */
+.icon {
+    width: 30px;
+    margin-left: 9px;
+    font-size: 18px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* آیکون بله و واتساپ */
 .button-icon {
     width: 22px;
     height: 22px;
     object-fit: contain;
     vertical-align: middle;
     margin-left: 8px;
+    flex-shrink: 0;
 }
+
+/* پایین صفحه */
+.footer {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 11px;
+    line-height: 1.8;
+    color: #999;
+}
+
+/* نمایش در موبایل‌های کوچک */
+@media (max-width: 360px) {
+
+    .page {
+        padding: 18px 12px 25px;
+    }
+
+    .card {
+        padding: 26px 16px 21px;
+    }
+
+    .name {
+        font-size: 22px;
+    }
+
+    .title {
+        font-size: 15px;
+    }
+
+    .center-logo {
+        width: 45px;
+        max-width: 45px;
+        top: 10px;
+        left: 10px;
+    }
+}
+
 </style>
 </head>
+
 <body>
-<img src="center-logo.png" alt="مرکز وکلا، کارشناسان رسمی و مشاوران خانواده قوه قضاییه" class="center-logo">
+
+<!-- لوگوی مرکز -->
+<img
+    src="center-logo.png"
+    alt="مرکز وکلا، کارشناسان رسمی و مشاوران خانواده قوه قضاییه"
+    class="center-logo"
+>
+
 <main class="page">
+
 <section class="card">
+
 <header class="header">
-<div class="name">حسام‌الدین بهرامپور</div>
-<div class="title">کارشناس رسمی دادگستری | راه و ساختمان</div>
-<div class="license">شماره پروانه: ۲۳۵۲۷</div>
-<div class="divider"></div>
-</header>
-<div class="buttons">
-<a class="button" href="tel:+989102878388"><span class="icon">☎</span>تماس با کارشناس</a>
-<a class="button" href="contact.vcf"><span class="icon">👤</span>ذخیره اطلاعات تماس</a>
-<a class="button" href="https://ble.ir/HABahrampour" target="_blank" rel="noopener"><img src="bale-icon.png" alt="" class="button-icon">پیام در بله</a>
-<a class="button" href="https://ble.ir/KarshenasiCivil" target="_blank" rel="noopener"><span class="icon">📚</span>کانال تخصصی راه و ساختمان</a>
-<a class="button" href="https://wa.me/989102878388" target="_blank" rel="noopener"><img src="whatsapp-icon.png" alt="" class="button-icon">واتساپ</a>
-<a class="button" href="https://hub.23055.ir/experts/profile/52338" target="_blank" rel="noopener"><span class="icon">🌐</span>وب‌سایت</a>
+
+<div class="name">
+حسام‌الدین بهرامپور
 </div>
-<div class="footer">کارشناس رسمی دادگستری – رشته راه و ساختمان</div>
+
+<div class="title">
+کارشناس رسمی دادگستری | راه و ساختمان
+</div>
+
+<div class="license">
+شماره پروانه: ۲۳۵۲۷
+</div>
+
+<div class="divider"></div>
+
+</header>
+
+<div class="buttons">
+
+<a class="button" href="tel:+989102878388">
+<span class="icon">☎</span>
+تماس با کارشناس
+</a>
+
+<a class="button" href="contact.vcf">
+<span class="icon">👤</span>
+ذخیره اطلاعات تماس
+</a>
+
+<a
+    class="button"
+    href="https://ble.ir/HABahrampour"
+    target="_blank"
+    rel="noopener"
+>
+<img src="bale-icon.png" alt="" class="button-icon">
+پیام در بله
+</a>
+
+<a
+    class="button"
+    href="https://ble.ir/KarshenasiCivil"
+    target="_blank"
+    rel="noopener"
+>
+<span class="icon">📚</span>
+کانال تخصصی راه و ساختمان
+</a>
+
+<a
+    class="button"
+    href="https://wa.me/989102878388"
+    target="_blank"
+    rel="noopener"
+>
+<img src="whatsapp-icon.png" alt="" class="button-icon">
+واتساپ
+</a>
+
+<a
+    class="button"
+    href="https://hub.23055.ir/experts/profile/52338"
+    target="_blank"
+    rel="noopener"
+>
+<span class="icon">🌐</span>
+وب‌سایت
+</a>
+
+</div>
+
+<div class="footer">
+کارشناس رسمی دادگستری – رشته راه و ساختمان
+</div>
+
 </section>
+
 </main>
+
 </body>
 </html>
