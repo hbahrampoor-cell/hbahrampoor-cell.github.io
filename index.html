@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>حسام‌الدین بهرامپور | کارشناس رسمی دادگستری</title>
 
-<meta name="description" content="حسام‌الدین بهرامپور، کارشناس رسمی دادگستری رشته راه و ساختمان">
+<meta
+    name="description"
+    content="حسام‌الدین بهرامپور، کارشناس رسمی دادگستری رشته راه و ساختمان"
+>
 
 <style>
+
+/* =========================
+   تنظیمات عمومی
+========================= */
 
 * {
     box-sizing: border-box;
@@ -22,19 +32,11 @@ body {
     font-family: Tahoma, Arial, sans-serif;
 }
 
-/* لوگوی مرکز */
-.center-logo {
-    position: fixed;
-    top: 12px;
-    left: 12px;
-    width: 50px;
-    height: auto;
-    max-width: 50px;
-    display: block;
-    z-index: 1000;
-}
 
-/* صفحه اصلی */
+/* =========================
+   صفحه اصلی
+========================= */
+
 .page {
     width: 100%;
     max-width: 480px;
@@ -42,40 +44,89 @@ body {
     padding: 28px 18px 35px;
 }
 
-/* کارت */
+
+/* =========================
+   کارت اصلی
+========================= */
+
 .card {
     background: #fff;
     border: 1px solid #e1e1de;
     border-radius: 20px;
-    padding: 32px 22px 25px;
+    padding: 30px 22px 25px;
     box-shadow: 0 8px 30px rgba(0,0,0,.05);
 }
 
-/* بخش عنوان */
+
+/* =========================
+   سربرگ
+========================= */
+
 .header {
-    text-align: center;
     margin-bottom: 28px;
 }
+
+
+/* بخش لوگو + مشخصات */
+
+.header-content {
+    display: flex;
+    align-items: center;
+    direction: ltr;
+    gap: 14px;
+    width: 100%;
+}
+
+
+/* لوگوی مرکز */
+
+.center-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+/* بخش نوشته‌ها */
+
+.header-text {
+    flex: 1;
+    direction: rtl;
+    text-align: center;
+}
+
+
+/* نام */
 
 .name {
     font-size: 25px;
     font-weight: 700;
     line-height: 1.6;
-    margin-bottom: 8px;
+    margin-bottom: 7px;
 }
+
+
+/* عنوان */
 
 .title {
     font-size: 16px;
     line-height: 1.9;
     color: #555;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
+
+
+/* شماره پروانه */
 
 .license {
     font-size: 14px;
     color: #777;
     line-height: 1.8;
 }
+
+
+/* خط جداکننده */
 
 .divider {
     width: 55px;
@@ -85,29 +136,42 @@ body {
     opacity: .45;
 }
 
-/* دکمه‌ها */
+
+/* =========================
+   دکمه‌ها
+========================= */
+
 .buttons {
     display: flex;
     flex-direction: column;
     gap: 11px;
 }
 
+
 .button {
     display: flex;
     align-items: center;
     justify-content: center;
+
     width: 100%;
     min-height: 54px;
+
     padding: 13px 16px;
+
     border: 1px solid #dededb;
     border-radius: 12px;
+
     background: #fafaf9;
     color: #222;
+
     text-decoration: none;
+
     font-size: 15px;
     font-weight: 600;
+
     transition: .2s;
 }
+
 
 .button:hover {
     background: #f0f0ee;
@@ -115,36 +179,61 @@ body {
     transform: translateY(-1px);
 }
 
-/* آیکون‌های معمولی */
+
+/* =========================
+   آیکون‌های معمولی
+========================= */
+
 .icon {
     width: 30px;
     margin-left: 9px;
+
     font-size: 18px;
     text-align: center;
+
     flex-shrink: 0;
 }
 
-/* آیکون بله و واتساپ */
+
+/* =========================
+   آیکون بله و واتساپ
+========================= */
+
 .button-icon {
     width: 22px;
     height: 22px;
+
     object-fit: contain;
+
     vertical-align: middle;
+
     margin-left: 8px;
+
     flex-shrink: 0;
 }
 
-/* پایین صفحه */
+
+/* =========================
+   پایین صفحه
+========================= */
+
 .footer {
     text-align: center;
+
     margin-top: 24px;
+
     font-size: 11px;
     line-height: 1.8;
+
     color: #999;
 }
 
-/* نمایش در موبایل‌های کوچک */
-@media (max-width: 360px) {
+
+/* =========================
+   نمایش در موبایل‌های کوچک
+========================= */
+
+@media (max-width: 400px) {
 
     .page {
         padding: 18px 12px 25px;
@@ -154,67 +243,156 @@ body {
         padding: 26px 16px 21px;
     }
 
+    .header-content {
+        gap: 10px;
+    }
+
+    .center-logo {
+        width: 44px;
+        height: 44px;
+    }
+
     .name {
         font-size: 22px;
     }
 
     .title {
-        font-size: 15px;
+        font-size: 14px;
     }
 
-    .center-logo {
-        width: 45px;
-        max-width: 45px;
-        top: 10px;
-        left: 10px;
+    .license {
+        font-size: 13px;
     }
+
+}
+
+
+/* =========================
+   موبایل‌های خیلی باریک
+========================= */
+
+@media (max-width: 340px) {
+
+    .center-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 13px;
+    }
+
+    .license {
+        font-size: 12px;
+    }
+
 }
 
 </style>
+
 </head>
+
 
 <body>
 
+
+<main class="page">
+
+
+<section class="card">
+
+
+<!-- =========================
+     سربرگ کارت
+========================= -->
+
+<header class="header">
+
+
+<div class="header-content">
+
+
 <!-- لوگوی مرکز -->
+
 <img
     src="center-logo.png"
     alt="مرکز وکلا، کارشناسان رسمی و مشاوران خانواده قوه قضاییه"
     class="center-logo"
 >
 
-<main class="page">
 
-<section class="card">
+<!-- نام و مشخصات -->
 
-<header class="header">
+<div class="header-text">
+
 
 <div class="name">
 حسام‌الدین بهرامپور
 </div>
 
+
 <div class="title">
 کارشناس رسمی دادگستری | راه و ساختمان
 </div>
+
 
 <div class="license">
 شماره پروانه: ۲۳۵۲۷
 </div>
 
+
+</div>
+
+
+</div>
+
+
 <div class="divider"></div>
+
 
 </header>
 
+
+<!-- =========================
+     دکمه‌های ارتباطی
+========================= -->
+
 <div class="buttons">
 
-<a class="button" href="tel:+989102878388">
+
+<!-- تماس -->
+
+<a
+    class="button"
+    href="tel:+989102878388"
+>
+
 <span class="icon">☎</span>
+
 تماس با کارشناس
+
 </a>
 
-<a class="button" href="contact.vcf">
+
+<!-- ذخیره اطلاعات تماس -->
+
+<a
+    class="button"
+    href="contact.vcf"
+>
+
 <span class="icon">👤</span>
+
 ذخیره اطلاعات تماس
+
 </a>
+
+
+<!-- بله -->
 
 <a
     class="button"
@@ -222,9 +400,19 @@ body {
     target="_blank"
     rel="noopener"
 >
-<img src="bale-icon.png" alt="" class="button-icon">
+
+<img
+    src="bale-icon.png"
+    alt=""
+    class="button-icon"
+>
+
 پیام در بله
+
 </a>
+
+
+<!-- کانال تخصصی -->
 
 <a
     class="button"
@@ -232,9 +420,15 @@ body {
     target="_blank"
     rel="noopener"
 >
+
 <span class="icon">📚</span>
+
 کانال تخصصی راه و ساختمان
+
 </a>
+
+
+<!-- واتساپ -->
 
 <a
     class="button"
@@ -242,9 +436,19 @@ body {
     target="_blank"
     rel="noopener"
 >
-<img src="whatsapp-icon.png" alt="" class="button-icon">
+
+<img
+    src="whatsapp-icon.png"
+    alt=""
+    class="button-icon"
+>
+
 واتساپ
+
 </a>
+
+
+<!-- وب‌سایت -->
 
 <a
     class="button"
@@ -252,19 +456,34 @@ body {
     target="_blank"
     rel="noopener"
 >
+
 <span class="icon">🌐</span>
+
 وب‌سایت
+
 </a>
 
+
 </div>
 
+
+<!-- =========================
+     پایین کارت
+========================= -->
+
 <div class="footer">
+
 کارشناس رسمی دادگستری – رشته راه و ساختمان
+
 </div>
+
 
 </section>
 
+
 </main>
 
+
 </body>
+
 </html>
